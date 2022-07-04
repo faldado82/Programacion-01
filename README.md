@@ -7,7 +7,7 @@ Los usuarios los puedes obtener en el ReadMe.
 
 Existen dos tipos de Usuarios, Alumnos y Docentes, cada uno con distintas funcionalidades dentro del sitio.
 
-# USUARIOS ALUMNOS ===================================================
+# USUARIOS ALUMNOS ==========================================
 
 User: 'juanca'
 Pass: 'Pass1'
@@ -45,10 +45,10 @@ Pass: 'micChecker21'
 User: 'estudio50'
 Pass: 'js4Life'
 
-# FIN DE USUARIOS ALUMNOS ============================================
+# FIN DE USUARIOS ALUMNOS ====================================
 
 
-# USUARIOS DOCENTES ==================================================
+# USUARIOS DOCENTES ==========================================
 
 User: 'eric1945'
 Pass: 'Heaven92'
@@ -62,5 +62,5 @@ Pass: 'Rock1'
 User: 'amyrehab83'
 Pass: 'iSaidno1'
 
-# FIN DE USUARIOS DOCENTES ===========================================
+# FIN DE USUARIOS DOCENTES ====================================
 
