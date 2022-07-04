@@ -1,0 +1,577 @@
+/* Fuente global */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* ############################### AJUSTES GLOBALES ###############################  */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  padding: 0.3rem 1rem;
+  background-color: #75a7d6;
+  color: white;
+}
+
+button:hover {
+  color: black;
+  background-color: #d6dde4;
+  transition: 0.4s all;
+}
+
+select {
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+}
+
+input {
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+}
+
+/* ############################### HEADER ###############################  */
+
+header {
+  background: radial-gradient(
+    circle,
+    rgba(44, 115, 201, 1) 0%,
+    rgba(10, 56, 112, 1) 100%
+  );
+
+  color: white;
+  min-height: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 4.7rem;
+  font-weight: 400;
+  margin: 1rem 0rem;
+}
+
+header h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+header p {
+  font-size: 1.7rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+header button {
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+}
+
+/* ############################### CONTENEDOR INICIAR SESIÓN ###############################  */
+
+.contentedor-iniciar-sesion {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.contentedor-iniciar-sesion input {
+  border-radius: 5px;
+  border: none;
+  padding: 3px;
+  text-align: center;
+}
+
+.mensajeLogIn {
+  font-size: 1.3rem;
+}
+
+main {
+  padding: 3rem;
+  min-height: 65vh;
+}
+
+.item-log-in {
+  font-size: 1.5rem;
+  margin-left: 2rem;
+}
+
+.img-contenedor {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.img-columna {
+  width: 30%;
+  margin: 0rem 2rem;
+}
+
+.img-columna h2 {
+  font-size: 2.3rem;
+}
+
+.img-columna p {
+  font-size: 1.4rem;
+}
+
+.img-contenedor img {
+  max-width: 260px;
+  border-radius: 5px;
+}
+
+footer {
+  background: radial-gradient(
+    circle,
+    rgba(44, 115, 201, 1) 0%,
+    rgba(10, 56, 112, 1) 100%
+  );
+  text-align: center;
+  color: white;
+  font-size: 1.3rem;
+  padding: 1rem;
+  min-height: 6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ############################### REGISTROS ###############################  */
+
+/* ************** Registro docente ************** */
+.contenedor-ventana-registro {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  animation: animacionVentana 0.4s ease-in-out;
+}
+
+.registroVentana {
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  border-radius: 5px;
+  width: 360px;
+}
+.registroVentana h3 {
+  font-size: 2rem;
+  text-align: center;
+}
+.registroVentana p {
+  text-align: center;
+}
+
+.item-formulario.error input {
+  border: 2px solid rgb(243, 100, 100);
+}
+
+.item-formulario.exito input {
+  border: 2px solid rgb(104, 245, 122);
+}
+
+.item-formulario.error span {
+  color: rgb(243, 100, 100);
+}
+
+.item-formulario {
+  margin-top: 2.3rem;
+}
+.mensajeRegistroExitoso {
+  text-align: center;
+  padding: 1rem;
+}
+
+.registroVentana select {
+  width: 100%;
+  border: rgb(219, 219, 219) 2px solid;
+  border-radius: 5px;
+  padding: 1rem;
+  outline: none;
+}
+
+.registroVentana select:focus {
+  border: rgb(148, 148, 148) 2px solid;
+}
+
+.registroVentana label {
+  display: block;
+  font-size: 1.6rem;
+}
+
+.registroVentana input {
+  width: 100%;
+  border: rgb(219, 219, 219) 2px solid;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+input[type='radio'] {
+  cursor: pointer;
+}
+
+.registroVentana input:focus {
+  width: 100%;
+  border: rgb(148, 148, 148) 2px solid;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.registroVentana button {
+  width: 100%;
+  margin-top: 2rem;
+  padding: 0.8rem 1rem;
+}
+
+.radioBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.btn-registro {
+  font-size: 1.8rem;
+}
+
+.cerrarBtnForm {
+  display: block;
+  margin-left: 30rem;
+  cursor: pointer;
+}
+
+.selectNiveles {
+  text-align: center;
+}
+
+/* ######################################################################## */
+/* ##################### *** INTERIOR APLICACIÓN ***  #####################  */
+/* ######################################################################## */
+
+/* ############################### NAVEGACION (NAVBAR) ###############################  */
+
+.navegacion {
+  background-color: #cce2f7;
+  background: radial-gradient(
+    circle,
+    rgba(44, 115, 201, 1) 0%,
+    rgba(10, 56, 112, 1) 100%
+  );
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 13vh;
+  z-index: 10;
+}
+
+.navegacion nav {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.65rem;
+  padding: 2rem;
+}
+
+.navegacion li {
+  cursor: pointer;
+}
+
+.item-lista {
+  padding: 2rem;
+  margin: 1rem 1rem;
+  text-align: center;
+  list-style: none;
+}
+
+.navegacion ul:hover {
+  border: 1px solid white;
+  color: white;
+}
+
+.item-lista a {
+  text-decoration: none;
+  color: white;
+}
+
+.seccion {
+  text-align: center;
+}
+
+.nombreUsuario {
+  text-align: center;
+  padding: 1.4rem;
+  margin-top: 1.5rem;
+  color: rgb(26, 72, 128);
+  border-bottom: 1px solid #ccc;
+}
+
+/* ############################### SECCION GLOBAL  ###############################  */
+
+.seccion h2 {
+  font-size: 2rem;
+  margin: 2rem;
+}
+
+.seccion select {
+  margin: 1rem;
+  font-size: 1.6rem;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid lightblue;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  outline: none;
+}
+
+.seccion input {
+  margin: 1rem;
+  font-size: 1.6rem;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid lightblue;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  outline: none;
+}
+
+.seccion label {
+  font-size: 1.6rem;
+}
+
+.seccion textarea {
+  resize: none;
+  font-family: 'Poppins', sans-serif;
+  border: 1px solid lightblue;
+  outline: none;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 0.3rem;
+}
+
+.seccion input[type='file'] {
+  cursor: pointer;
+}
+
+.subTituloNombre {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+/* ############################### SECCION 1  ###############################  */
+
+.seccion1 {
+  background-color: white;
+  min-height: 20vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 2rem;
+}
+
+.selectNiveles {
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  margin: 0 auto;
+}
+
+.mensajeCambioDeNivel {
+  font-size: 1.4rem;
+  padding: 1rem;
+}
+
+/* Seccion 1 alumno */
+.seccion1 .resultadoBusqueda {
+  margin: 2rem;
+}
+.seccion1 table {
+  margin: 0 auto;
+}
+
+.seccion1 .nombreProfe {
+  color: rgb(26, 72, 128);
+}
+
+.seccion1 p {
+  font-size: 1.7rem;
+}
+
+.seccion1 .resultadoBusqueda p {
+  font-size: 1.6rem;
+}
+
+.seccion1 .resultadoBusqueda h2 {
+  margin: 1rem;
+  color: #3577b4;
+}
+
+.seccion1 .resultadoBusqueda img {
+  width: 770px;
+}
+
+.seccion1 .resultadoBusqueda img {
+  width: 770px;
+}
+
+.btnBusqueda {
+  padding: 0.5rem 1.4rem;
+  font-size: 1.8rem;
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* ############################### SECCIÓN 2 ###############################  */
+.seccion2 {
+  width: 35%;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.seccion2 .divMensajes {
+  font-size: 1.55rem;
+}
+
+.inputBusqueda {
+  width: 40%;
+}
+
+.agregarEjercicio {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ############################### SECCION 3  ###############################  */
+
+.seccion3 {
+  text-align: center;
+  width: 900px;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.seccion3 p {
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 1rem;
+}
+
+.tablaDevoluciones {
+  margin: 0 auto;
+}
+
+/* ############################### SECCION 4  ###############################  */
+
+.seccion4 {
+  margin-bottom: 10rem;
+}
+
+.seccion4 p {
+  font-size: 1.6rem;
+}
+
+/* ############################### CLASES DE MOSTRAR Y OCULTAR ###############################  */
+.mostrar-ventana {
+  display: block;
+}
+
+.ocultar-ventana {
+  display: none;
+}
+
+/* ############################### ESTILO TABLA GLOBAL ###############################  */
+
+table {
+  border-collapse: collapse;
+  width: 60%;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  font-size: 1.8rem;
+  text-align: center;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+td {
+  font-size: 1.6rem;
+  text-align: center;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+tr:nth-child(even) {
+  background-color: #ececec;
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(36, 101, 180);
+  color: white;
+}
+
+th {
+  background-color: rgb(36, 101, 180);
+  color: white;
+}
+
+table img {
+  width: 350px;
+}
+
+@media screen and (max-width: 1100px) {
+  .seccion2 {
+    width: 70%;
+  }
+
+  .inputBusqueda {
+    width: 60%;
+  }
+}
+
+@keyframes animacionVentana {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+} ;

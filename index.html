@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" href="img/iconmonstr-disc-5.svg" type="image/icon type" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/estilo/estilo.css" />
+  <title>
+    Obligatorio - Nicolás Bañales - Francisco Aldado - Universidad ORT -
+    Docente Gonzalo Gentile
+  </title>
+</head>
+
+<body>
+  <!-- ############## PAGINA INICIO ############## -->
+
+  <div id="pagina-inicio" class="pagina-inicio">
+    <!-- Header -->
+    <header>
+      <h1>Bienvenido a <b>Guitar Academy</b></h1>
+      <h2>
+        La mejor forma de aprender cuando estas encerrado <br />
+        Y cuando no, también!
+      </h2>
+
+      <div class="btn-registro-contenedor">
+        <button id="btnAbrirVentanaRegistro" class="btn-registro">
+          Registrarme!
+        </button>
+      </div>
+
+      <p>Ya tenés una cuenta? Iniciá sesión!</p>
+      <!-- Inciar sesión -->
+      <div class="contentedor-iniciar-sesion">
+        <!-- Log in item usuario -->
+        <div class="item-log-in">
+          <label for="logInUsuarioInput">Usuario:</label>
+          <input type="text" id="logInUsuarioInput" placeholder="Ingrese su usuario" />
+        </div>
+
+        <!-- Log in item password -->
+        <div class="item-log-in">
+          <label for="logInPasswordInput">Contraseña:</label>
+          <input type="password" id="logInPasswordInput" placeholder="Ingrese su contraseña" />
+        </div>
+        <button id="btnLogin">Iniciar sesión</button>
+        <br />
+      </div>
+      <span id="mensajeLogIn" class="mensajeLogIn"></span>
+    </header>
+    <!-- Main -->
+    <main>
+      <div class="img-contenedor">
+        <div class="img-columna">
+          <img src="img/landing1.jpg" alt="chico tocando la guitarra" />
+          <h2>Aprende Guitarra y mejora tu canto!</h2>
+          <p>
+            Prueba nuestras lecciones y aprende a tocar tus temas preferidos
+            al mismo tiempo que te diviertes cantando! Sorprende a tu familia
+            y amigos en tiempo récord!
+          </p>
+        </div>
+
+        <div class="img-columna">
+          <img src="img/landing2.jpg" alt="chica tocando la guitarra" />
+          <h2>Haz aprendido guitarra antes ?</h2>
+          <p>
+            Tal vez mas de una vez? Podemos ayudarte a alcanzar tus metas
+            mucho mas rápido! Contamos con un destacado plantel docente que te
+            pondran en el escenario antes de que lo sueñes.
+          </p>
+        </div>
+
+        <div class="img-columna">
+          <img src="img/landing3.jpg" alt="chica de viaje con la guitarra" />
+          <h2>Nuevo contenido todas las semanas!</h2>
+          <p>
+            Aprender guitarra no es solo un destino sino todo un viaje! Te
+            ayudaremos atravesar cada dificultad y a disfrutar el recorrido.
+            Sorprendete a ti mismo y a los demas mientras aprendes con
+            nosotros. Que esperas ?
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      Desarollado con ♥ por Francisco Aldado y Nicolás Bañales <br> Universidad ORT -
+      Materia: Programación 1 - Docente: Gonzalo Gentile
+    </footer>
+  </div>
+
+
+  <!-- ############## FORMULARIOS DE REGISTRO ############## -->
+
+  <!-- Formulario de registro -->
+  <div class="contenedor-ventana-registro">
+
+    <!-- Solo formulario -->
+    <div id="registroVentana" class="registroVentana">
+      <img class="cerrarBtnForm" src="/img/iconmonstr-x-mark-7.svg" />
+
+      <!-- Nombre -->
+
+      <h3>Registrarme!</h3>
+      <label id="mensajeRegistroExitoso" class="mensajeRegistroExitoso"></label>
+
+      <div class="item-formulario">
+        <label for="inputNombreRegistro">Nombre:</label>
+
+        <input type="text" id="inputNombreRegistro" placeholder="Ingrese su nombre" />
+        <span></span>
+      </div>
+
+      <!-- Usuario -->
+      <div class="item-formulario">
+        <label for="inputUsuarioRegistro">Usuario:</label>
+        <input type="text" id="inputUsuarioRegistro" placeholder="Ingrese su usuario" />
+        <span></span>
+      </div>
+      <!-- Contraseña -->
+      <div class="item-formulario">
+        <label for="inputPasswordRegistro">Contraseña:</label>
+        <input type="password" id="inputPasswordRegistro" placeholder="Ingrese su contraseña" />
+        <span></span>
+
+      </div>
+      <!-- Confrimacion Contraseña -->
+
+      <div class="item-formulario">
+        <label for="confirmPasswordRegistro">Confirmar contraseña:</label>
+        <input type="password" id="confirmPasswordRegistro" placeholder="Confirmar contraseña" />
+        <span></span>
+
+      </div>
+
+
+      <!-- Eleccion de tipo de usuario -->
+      <div class="item-formulario" id="radios">
+        <div class="radioBtn">
+          <label for="profesor">Soy profesor:</label>
+          <input type="radio" id="profesorRadio" name="tipoUsuario" value="docente" checked>
+          <label for="alumno">Soy alumno:</label>
+          <input type="radio" id="alumnoRadio" name="tipoUsuario" value="alumno">
+        </div>
+
+        <div class="item-formulario">
+          <div id="selectDocentesParaRegistro"></div>
+          <span></span>
+
+        </div>
+
+      </div>
+
+      <button id="btnRegistro">Registrarme</button>
+    </div>
+  </div>
+
+  </div>
+
+
+
+  <!-- ################################################## -->
+  <!-- ############## ** INTERIOR APLICACIÓN **  ######## -->
+  <!-- ################################################## -->
+  <div id="contenedor-aplicacion" class="contenedor-aplicacion ocultar-ventana">
+    <!-- NAVEGACION INTERIOR APLICACIÓN -->
+    <div id="navegacion" class="navegacion"></div>
+    <h1 id="nombreUsuario" class="nombreUsuario"></h1>
+
+    <!-- SECCION 1. DOCENTE: Cambiar nivel, ALUMNO: Ver ejercicios planteados -->
+
+    <div class="seccion seccion1" id="seccion1"></div>
+
+    <!-- SECCION 2. DOCENTE: Plantear Ejercicios, ALUMNO: Realizar entrega planteados -->
+
+    <div class="seccion seccion2" id="seccion2"></div>
+
+    <!-- SECCION 3. DOCENTE: Redactar devolucion, ALUMNO: Ver ejercicios resueltos -->
+
+    <div class="seccion seccion3" id="seccion3"></div>
+
+    <!-- SECCION 4. DOCENTE: Estadisticas de docente, ALUMNO: Estadisticas alumno -->
+
+    <div class="seccion seccion4" id="seccion4"></div>
+  </div>
+
+  <script src="js/clases.js"></script>
+  <script src="js/codigo.js"></script>
+  <script src="js/precargas.js"></script>
+  <script src="js/manejoUI.js"></script>
+</body>
+
+</html>
