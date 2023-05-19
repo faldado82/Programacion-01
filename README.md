@@ -3,7 +3,7 @@ Realizado por Francisco Aldado y Nicolas Bañales.
 
 Este es el trabajo para la materia Programación 1, donde utilizamos los lenguajes de HTML, CSS y JavaScript.
 Las pautas de este trabajo se encuentran en el pdf anexado.
-Los usuarios los puedes obtener en el ReadMe. 
+Los usuarios y passwords los puedes obtener en el ReadMe. 
 
 Existen dos tipos de Usuarios, Alumnos y Docentes, cada uno con distintas funcionalidades dentro del sitio.
 
